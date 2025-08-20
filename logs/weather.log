@@ -1,3 +1,29 @@
 [2025-08-20T09:07:30.903Z] {"url":"https://api.openweathermap.org/data/2.5/weather?q=Lahore&appid=0f3973bfa374eafff100baf1432d3606&units=metric","response":{"coord":{"lon":74.3436,"lat":31.5497},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":35.92,"feels_like":40.06,"temp_min":35.92,"temp_max":35.92,"pressure":1001,"humidity":43,"sea_level":1001,"grnd_level":977},"visibility":10000,"wind":{"speed":1.58,"deg":72,"gust":1.29},"clouds":{"all":90},"dt":1755680345,"sys":{"country":"PK","sunrise":1755649861,"sunset":1755697286},"timezone":18000,"id":1172451,"name":"Lahore","cod":200}}
 [2025-08-20T09:08:39.656Z] {"url":"https://api.openweathermap.org/data/2.5/weather?q=karachi&appid=0f3973bfa374eafff100baf1432d3606&units=metric","response":{"coord":{"lon":67.0822,"lat":24.9056},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":35.95,"feels_like":42.95,"temp_min":35.95,"temp_max":35.95,"pressure":997,"humidity":50,"sea_level":997,"grnd_level":994},"visibility":10000,"wind":{"speed":4.34,"deg":213,"gust":4.99},"clouds":{"all":73},"dt":1755680724,"sys":{"country":"PK","sunrise":1755652078,"sunset":1755698554},"timezone":18000,"id":1174872,"name":"Karachi","cod":200}}
 [2025-08-20T09:22:13.536Z] {"url":"https://api.openweathermap.org/data/2.5/weather?q=Lahore&appid=0f3973bfa374eafff100baf1432d3606&units=metric","response":{"coord":{"lon":74.3436,"lat":31.5497},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":35.92,"feels_like":40.06,"temp_min":35.92,"temp_max":35.92,"pressure":1001,"humidity":43,"sea_level":1001,"grnd_level":977},"visibility":10000,"wind":{"speed":1.58,"deg":72,"gust":1.29},"clouds":{"all":90},"dt":1755681246,"sys":{"country":"PK","sunrise":1755649861,"sunset":1755697286},"timezone":18000,"id":1172451,"name":"Lahore","cod":200}}
+----- Wed Aug 20 15:50:11 PST 2025 -----
+City: Karachi
+Request URL: https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=API_KEY&units=metric
+Response: {"coord":{"lon":67.0822,"lat":24.9056},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":29.25,"feels_like":34.54,"temp_min":29.25,"temp_max":29.25,"pressure":996,"humidity":76,"sea_level":996,"grnd_level":993},"visibility":10000,"wind":{"speed":7.81,"deg":271,"gust":7.63},"clouds":{"all":83},"dt":1755686423,"sys":{"country":"PK","sunrise":1755652078,"sunset":1755698554},"timezone":18000,"id":1174872,"name":"Karachi","cod":200}
+
+----- Wed Aug 20 15:51:44 PST 2025 -----
+City: Lahore
+Request URL: https://api.openweathermap.org/data/2.5/weather?q=Lahore&appid=API_KEY&units=metric
+Response: {"coord":{"lon":74.3436,"lat":31.5497},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":34.9,"feels_like":39.69,"temp_min":34.9,"temp_max":34.9,"pressure":1000,"humidity":48,"sea_level":1000,"grnd_level":976},"visibility":10000,"wind":{"speed":1.05,"deg":52,"gust":1.12},"clouds":{"all":94},"dt":1755686900,"sys":{"country":"PK","sunrise":1755649861,"sunset":1755697286},"timezone":18000,"id":1172451,"name":"Lahore","cod":200}
+
+----- Wed Aug 20 15:58:52 PST 2025 -----
+City: Lahore
+Response: {"coord":{"lon":74.3436,"lat":31.5497},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":34.9,"feels_like":39.69,"temp_min":34.9,"temp_max":34.9,"pressure":1000,"humidity":48,"sea_level":1000,"grnd_level":976},"visibility":10000,"wind":{"speed":1.05,"deg":52,"gust":1.12},"clouds":{"all":94},"dt":1755686900,"sys":{"country":"PK","sunrise":1755649861,"sunset":1755697286},"timezone":18000,"id":1172451,"name":"Lahore","cod":200}
+
+----- Wed Aug 20 15:59:05 PST 2025 -----
+City: Karachi
+Response: {"coord":{"lon":67.0822,"lat":24.9056},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10d"}],"base":"stations","main":{"temp":29.25,"feels_like":34.54,"temp_min":29.25,"temp_max":29.25,"pressure":996,"humidity":76,"sea_level":996,"grnd_level":993},"visibility":10000,"wind":{"speed":7.81,"deg":271,"gust":7.63},"rain":{"1h":0.61},"clouds":{"all":83},"dt":1755687054,"sys":{"country":"PK","sunrise":1755652078,"sunset":1755698554},"timezone":18000,"id":1174872,"name":"Karachi","cod":200}
+
+----- Wed Aug 20 16:00:46 PST 2025 -----
+City: Islamabad
+Response: {"coord":{"lon":73.1338,"lat":33.7104},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10d"}],"base":"stations","main":{"temp":30.96,"feels_like":34.52,"temp_min":30.96,"temp_max":30.96,"pressure":1003,"humidity":59,"sea_level":1003,"grnd_level":923},"visibility":10000,"wind":{"speed":0.76,"deg":130,"gust":0.88},"rain":{"1h":0.51},"clouds":{"all":4},"dt":1755687162,"sys":{"country":"PK","sunrise":1755649982,"sunset":1755697746},"timezone":18000,"id":1162015,"name":"Islamabad","cod":200}
+
+----- Wed Aug 20 16:03:26 PST 2025 -----
+City: Karachi
+Response: {"coord":{"lon":67.0822,"lat":24.9056},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":29.25,"feels_like":34.54,"temp_min":29.25,"temp_max":29.25,"pressure":996,"humidity":76,"sea_level":996,"grnd_level":993},"visibility":10000,"wind":{"speed":7.81,"deg":271,"gust":7.63},"clouds":{"all":83},"dt":1755687675,"sys":{"country":"PK","sunrise":1755652078,"sunset":1755698554},"timezone":18000,"id":1174872,"name":"Karachi","cod":200}
+
