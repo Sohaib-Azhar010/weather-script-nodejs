@@ -1,0 +1,56 @@
+Node.js script that performs the following tasks when executed:
+Fetch Weather Data
+
+
+Use any public API (e.g., OpenWeatherMap, free tier is fine).
+
+
+Fetch weather for a specific city (city name will be configurable , you can allow to take city name as input from the user).
+
+
+Extract the following details from the API response:
+
+
+City name
+
+
+Temperature
+
+
+Weather condition (e.g., sunny, cloudy, rain)
+
+
+Current Time of that city
+
+
+
+Format Report
+
+
+Create a human-readable message containing the weather details.
+
+
+Example format:
+
+ Weather Report for Lahore  
+Temperature: 32°C  
+Condition: Cloudy  
+Reported Time: 1:00 PM   
+
+Send Notification to Slack
+
+
+Send the formatted weather message to a Slack channel or Group (create one with Behzad Khadim and AmmarFarooq) using a Slack webhook (webhook URL will be configurable).
+
+
+Logging
+
+
+Store API request and response details in a log file: logs/weather.log.
+
+
+Maintain logs only for the last 7 days (older logs should be automatically deleted). ((((((can only be done if we use backend storage- so ignore for now ))))))
+
+
+
+Deliverable: A single Node.js script that runs and performs the above steps
