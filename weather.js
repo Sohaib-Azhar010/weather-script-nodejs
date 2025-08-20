@@ -2,16 +2,25 @@
 require("dotenv").config();
 const axios = require("axios");
 const fs = require("fs");
+const readline = require("readline");
 
 // Get environment variables
 const API_KEY = process.env.OPENWEATHER_API_KEY;
 const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL;
 const DEFAULT_CITY = process.env.DEFAULT_CITY || "Lahore";
 
-// Get city from command-line args or fallback to default
-const city = process.argv[2] || DEFAULT_CITY;
+// Create readline interface for user input
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
-async function fetchWeather() {
+rl.question("Enter city name: ", (cityInput) => {
+  const city = cityInput || DEFAULT_CITY;
+  fetchWeather(city).then(() => rl.close());
+});
+
+async function fetchWeather(city) {
   try {
     // OpenWeather API URL
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
@@ -24,7 +33,9 @@ async function fetchWeather() {
     const cityName = data.name;
     const temperature = data.main.temp;
     const condition = data.weather[0].description;
-    const localTime = new Date().toLocaleString("en-US", { timeZone: "Asia/Karachi" }); // adjust timezone if needed
+    const localTime = new Date().toLocaleString("en-US", {
+      timeZone: "Asia/Karachi", // adjust timezone if needed
+    });
 
     // Format report
     const report = `
@@ -41,7 +52,6 @@ async function fetchWeather() {
 
     // Send to Slack
     await sendToSlack(report);
-
   } catch (error) {
     console.error("Error fetching weather:", error.message);
   }
@@ -67,6 +77,3 @@ async function sendToSlack(message) {
     console.error("Error sending to Slack:", error.message);
   }
 }
-
-// Run script
-fetchWeather();
